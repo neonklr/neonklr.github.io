@@ -1,44 +1,363 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Anatomy of a Capture</title>
-    <meta name="description" content="A scroll-driven presentation on the 2007 Shatt al-Arab incident.">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <canvas class="starfield" data-starfield aria-hidden="true"></canvas>
-    <div class="ambient-grid" aria-hidden="true"></div>
-    <div class="noise-layer" aria-hidden="true"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When Routine Meets Ambush</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="fixed-crest" aria-label="Indian Navy logo">
+    <img src="assets/logo.jpg" alt="Indian Navy logo">
+  </div>
 
-    <header class="deck-hud" aria-label="Presentation status">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <span>Shatt al-Arab Incident</span>
+  <main>
+    <section class="slide cover theme-ocean">
+      <div class="satellite-field"></div>
+      <div class="radar giant"></div>
+      <div class="border-line"></div>
+      <div class="boat boat-left"></div>
+      <div class="boat boat-right"></div>
+      <div class="content cover-copy reveal">
+        <p class="eyebrow">Leadership | Ethics | Organisational Behaviour</p>
+        <h1>When Routine Meets Ambush</h1>
+        <h2>The 2007 Iranian Hostage Crisis</h2>
+        <p class="quote">History tells us what happened. Management tells us why it happened.</p>
       </div>
-      <div class="deck-counter" aria-live="polite">
-        <span data-current>01</span><b>/</b><span data-total>15</span>
+    </section>
+
+    <section class="slide mission theme-ink">
+      <div class="folder"></div>
+      <div class="content reveal">
+        <p class="stamp">DECLASSIFIED | IRAN-2007</p>
+        <h2>Mission Briefing</h2>
+        <p class="sub">Leadership Case Investigation</p>
+        <div class="dogtags">
+          <article><b>Member 1</b><span>Incident Narrator</span></article>
+          <article><b>Member 2</b><span>Leadership Analyst</span></article>
+          <article><b>Member 3</b><span>Ethics Analyst</span></article>
+          <article><b>Member 4</b><span>OB Specialist</span></article>
+          <article><b>Member 5</b><span>Report Analyst</span></article>
+          <article><b>Member 6</b><span>Lessons Lead</span></article>
+        </div>
+        <div class="brief-footer">
+          <span>Course: Organisational Behaviour</span>
+          <span>Faculty: Dr. XXXXX</span>
+          <span>Syndicate XX</span>
+        </div>
       </div>
-      <div class="progress-shell" aria-hidden="true">
-        <div class="progress-bar" data-progress></div>
+    </section>
+
+    <section class="slide cold theme-alert">
+      <div class="red-sweep"></div>
+      <div class="content reveal">
+        <p class="eyebrow">Cold Open</p>
+        <h2>23 March 2007<br><span>09:10 AM</span></h2>
+        <div class="count-lines">
+          <p>15 British personnel.</p>
+          <p>Surrounded.</p>
+          <p>Outnumbered.</p>
+          <p>No orders.</p>
+          <p>30 seconds to decide.</p>
+        </div>
+        <strong class="question">What would you do?</strong>
       </div>
-    </header>
+    </section>
 
-    <main class="stage" data-stage></main>
-    <nav class="slide-nav" data-nav aria-label="Slide navigation"></nav>
+    <section class="slide agenda theme-plum">
+      <div class="content reveal">
+        <p class="eyebrow">Mission Board</p>
+        <h2>Agenda</h2>
+        <div class="mission-board">
+          <span>Situation</span><span>Actors</span><span>Incident</span>
+          <span>Leadership</span><span>Ethics</span><span>OB Failures</span><span>Lessons</span>
+        </div>
+      </div>
+    </section>
 
-    <aside class="speaker-notes" aria-live="polite">
-      <strong>Presenter note</strong>
-      <span data-notes></span>
-    </aside>
+    <section class="slide setting theme-map">
+      <div class="map-panel">
+        <img src="assets/map-of-conflict.jpeg" alt="Map of the Shatt al-Arab conflict area">
+        <div class="river"></div>
+        <div class="map-pin">Shatt al-Arab</div>
+      </div>
+      <div class="content split reveal">
+        <div></div>
+        <div>
+          <p class="eyebrow">Setting The Stage</p>
+          <h2>A Border Written On Water</h2>
+          <ul class="tight">
+            <li>Iran-Iraq maritime border</li>
+            <li>High geopolitical tension</li>
+            <li>Coalition maritime security patrol</li>
+            <li>Boundary interpretation contested</li>
+          </ul>
+          <p class="quote">A conflict over maps became a crisis over leadership.</p>
+        </div>
+      </div>
+    </section>
 
-    <script src="presentation-data.js"></script>
-    <script src="components.js"></script>
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        window.PresentationComponents.renderPresentation(window.presentationSlides);
-      });
-    </script>
-  </body>
+    <section class="slide timeline-slide theme-sun">
+      <div class="content reveal">
+        <p class="eyebrow">Timeline</p>
+        <h2>How The Crisis Unfolded</h2>
+        <div class="timeline">
+          <article><b>1975</b><span>Algiers Agreement frames the waterway dispute.</span></article>
+          <article><b>2004</b><span>Earlier Royal Navy boarding team captured and released.</span></article>
+          <article><b>23 Mar 2007</b><span>HMS Cornwall boarding party detained.</span></article>
+          <article><b>13 Days</b><span>Diplomatic pressure and media escalation.</span></article>
+          <article><b>Apr 2007+</b><span>Fulton and Hall reviews examine failures.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide actors theme-cyan">
+      <div class="content reveal">
+        <p class="eyebrow">Actors</p>
+        <h2>Influence Network</h2>
+        <div class="network">
+          <div class="node center">Incident</div>
+          <div class="node n1">Royal Navy</div>
+          <div class="node n2">IRGC Navy</div>
+          <div class="node n3">MoD</div>
+          <div class="node n4">Media</div>
+          <div class="node n5">Parliament</div>
+          <div class="node n6">Coalition</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide storyboard theme-coral">
+      <div class="content reveal">
+        <p class="eyebrow">Story Begins</p>
+        <h2>Routine Turns Critical</h2>
+        <div class="frames">
+          <article><span>01</span><b>Routine Patrol</b><p>Boarding team launches from HMS Cornwall.</p></article>
+          <article><span>02</span><b>Merchant Inspection</b><p>Dhow inspection appears ordinary.</p></article>
+          <article><span>03</span><b>Air Cover Leaves</b><p>Surveillance gap opens.</p></article>
+          <article><span>04</span><b>Fast Boats Arrive</b><p>Iranian patrol boats close in.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide decision theme-crimson">
+      <div class="content reveal">
+        <p class="eyebrow">The Critical Moment</p>
+        <h2>Fight Or Surrender?</h2>
+        <div class="decision-tree">
+          <div class="root">30 Seconds</div>
+          <div class="branch"><span>Fight</span><small>Escalation | casualties | possible war</small></div>
+          <div class="branch"><span>Surrender</span><small>Hostage crisis | diplomatic route</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide iceberg theme-ice">
+      <div class="content reveal">
+        <p class="eyebrow">Why It Happened</p>
+        <h2>The Iceberg Below The Capture</h2>
+        <div class="iceberg-shape">
+          <div class="top">Capture</div>
+          <div class="below">
+            <span>Routine complacency</span><span>Poor intelligence</span><span>Weak coordination</span>
+            <span>Predictable patrols</span><span>Leadership ambiguity</span><span>Memory failure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide leadership theme-lime">
+      <div class="content reveal">
+        <p class="eyebrow">Leadership Styles</p>
+        <h2>Three Styles Under Pressure</h2>
+        <div class="cards">
+          <article class="portrait-card"><img src="assets/royal-navy.jpeg" alt="Royal Navy"><b>Royal Navy</b><span>Transactional</span><p>SOP-led, disciplined, but rigid in ambiguous space.</p></article>
+          <article class="portrait-card"><img src="assets/iranian-forces.jpeg" alt="Iranian forces"><b>Iranian Forces</b><span>Authoritarian</span><p>Centralized, fast, and tactically assertive.</p></article>
+          <article class="portrait-card"><img src="assets/robert-fulton.jpeg" alt="Sir Rob Fulton"><b>Fulton Review</b><span>Transformational</span><p>Reform-oriented focus on systems, learning, and command.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide leadership-table theme-graphite">
+      <div class="content reveal">
+        <p class="eyebrow">Actor Analysis</p>
+        <h2>Leadership Styles In The Case</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>S. No.</th>
+                <th>Actor</th>
+                <th>Leadership Style</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>HMS Cornwall</td><td>Transactional</td><td>Focused on procedures and mission execution, but failed to adapt to changing risks.</td></tr>
+              <tr><td>2</td><td>Royal Navy senior leadership</td><td>Bureaucratic</td><td>Relied on doctrine and chain of command, slowing adaptation.</td></tr>
+              <tr><td>3</td><td>Secretary of State Des Browne</td><td>Accountable and democratic</td><td>Accepted responsibility, commissioned investigations, and allowed parliamentary scrutiny.</td></tr>
+              <tr><td>4</td><td>Sir Rob Fulton</td><td>Transformational</td><td>Identified systemic weaknesses and recommended reform rather than blame.</td></tr>
+              <tr><td>5</td><td>Tony Hall</td><td>Ethical</td><td>Focused on transparency, governance, and media policy improvement.</td></tr>
+              <tr><td>6</td><td>Defence Committee</td><td>Participative</td><td>Challenged the MoD, demanded evidence, and monitored implementation.</td></tr>
+              <tr><td>7</td><td>Iranian Revolutionary Guard</td><td>Authoritarian</td><td>Used centralized command and decisive execution in the capture operation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="slide matrix theme-violet">
+      <div class="content reveal">
+        <p class="eyebrow">Leadership Matrix</p>
+        <h2>Speed Versus Flexibility</h2>
+        <div class="matrix-grid">
+          <span class="axis x">Decision Speed</span>
+          <span class="axis y">Flexibility</span>
+          <i class="dot iran">Iran</i>
+          <i class="dot rn">Royal Navy</i>
+          <i class="dot mod">MoD</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide ethics theme-gold">
+      <div class="content reveal">
+        <p class="eyebrow">Ethical Dilemmas</p>
+        <h2>Four Questions Leaders Faced</h2>
+        <div class="ethics-grid">
+          <article>Should personnel sell their stories?</article>
+          <article>Should the reports be public?</article>
+          <article>Punish people or fix systems?</article>
+          <article>Transparency or operational security?</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide dashboard theme-graphite">
+      <div class="content reveal">
+        <p class="eyebrow">Integrity Test</p>
+        <h2>Accountability Dashboard</h2>
+        <div class="scorecard">
+          <span>Accountability <b class="ok">High</b></span>
+          <span>Transparency <b class="warn">Mixed</b></span>
+          <span>Professional Ethics <b class="bad">Failed</b></span>
+          <span>Leadership Ownership <b class="bad">Delayed</b></span>
+        </div>
+        <p class="quote">Many people could have said no. Nobody did.</p>
+      </div>
+    </section>
+
+    <section class="slide gears theme-amber">
+      <div class="content reveal">
+        <p class="eyebrow">Organisational Behaviour</p>
+        <h2>Failures That Interlocked</h2>
+        <div class="puzzle-system">
+          <span>Communication</span><span>Leadership</span><span>Groupthink</span>
+          <span>Learning Failure</span><span>Ethics</span><span>Crisis Management</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide fishbone theme-teal">
+      <div class="content reveal">
+        <p class="eyebrow">Root Cause Analysis</p>
+        <h2>Entities Pulled Into One Incident</h2>
+        <div class="scatter-diagram">
+          <b>Incident</b>
+          <i class="s1">People</i><i class="s2">Process</i><i class="s3">Leadership</i>
+          <i class="s4">Communication</i><i class="s5">Environment</i><i class="s6">Culture</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide cheese theme-blue">
+      <div class="content reveal">
+        <p class="eyebrow">Swiss Cheese Model</p>
+        <h2>Several Small Holes Aligned</h2>
+        <div class="cheese-stack">
+          <span>Training</span><span>Communication</span><span>Leadership</span><span>Ethics</span>
+          <b>Hostage Crisis</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide roadmap theme-rose">
+      <div class="content reveal">
+        <p class="eyebrow">Aftermath</p>
+        <h2>What Changed Afterwards</h2>
+        <div class="road after-road">
+          <span>Before</span><span>Investigations</span><span>Release</span><span>Recommendations</span><span>Preparedness</span>
+        </div>
+        <figure class="release-photo"><img src="assets/15-freed-royals.jpeg" alt="Freed Royal Navy personnel"><figcaption>Release became the public turning point before formal reforms.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="slide lessons theme-green">
+      <div class="content reveal">
+        <p class="eyebrow">Lessons For Managers</p>
+        <h2>Beyond The Military Case</h2>
+        <div class="lesson-list">
+          <p>Routine creates blind spots.</p>
+          <p>Ethics matters most in crisis.</p>
+          <p>Communication saves organisations.</p>
+          <p>Leadership is tested under uncertainty.</p>
+          <p>Institutional memory prevents repeated failures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide collage-slide media-toggle collage-one" tabindex="0" aria-label="Incident collage one, click to toggle caption">
+      <img src="assets/collage-1.jpeg" alt="Iranian hostage crisis collage 1">
+      <div class="content reveal image-caption">
+        <p class="eyebrow">Visual Annexure</p>
+        <h2>Incident Collage I</h2>
+      </div>
+    </section>
+
+    <section class="slide collage-slide media-toggle collage-two" tabindex="0" aria-label="Incident collage two, click to toggle caption">
+      <img src="assets/collage-2.jpeg" alt="Iranian hostage crisis collage 2">
+      <div class="content reveal image-caption">
+        <p class="eyebrow">Visual Annexure</p>
+        <h2>Incident Collage II</h2>
+      </div>
+    </section>
+
+    <section class="slide annexure-video media-toggle theme-video" tabindex="0" aria-label="Annexure video one, click to toggle caption">
+      <video src="assets/annexure-1.mp4" controls preload="metadata"></video>
+      <div class="content reveal video-caption">
+        <p class="eyebrow">Annexure</p>
+        <h2>Case Video Reference</h2>
+      </div>
+    </section>
+
+    <section class="slide annexure-video media-toggle theme-video" tabindex="0" aria-label="Annexure video two, click to toggle caption">
+      <video src="assets/crew-return.mp4" controls preload="metadata"></video>
+      <div class="content reveal video-caption">
+        <p class="eyebrow">Annexure 2</p>
+        <h2>Crew Return</h2>
+      </div>
+    </section>
+
+    <section class="slide reflection theme-black">
+      <div class="content reveal">
+        <h2>The hostage crisis was not won or lost in 30 minutes.</h2>
+        <p>It was built over years of unnoticed organisational failures.</p>
+      </div>
+    </section>
+
+
+    <section class="slide thanks theme-ocean">
+      <div class="satellite-field"></div>
+      <div class="content reveal">
+        <h2>Questions?</h2>
+        <p>When routine meets ambiguity, leadership decides the outcome.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
